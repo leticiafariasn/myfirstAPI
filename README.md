@@ -1,1 +1,1 @@
-# myfirstAPI
+Este é meu primeiro projeto utilizando API, desenvolvido durante as aulas do curso Geração Tech 2.0 com o professor Luan Oliveira dos Santos. O projeto foi feito com HTML, CSS e JavaScript, utilizando o Supabase como banco de dados para armazenar e acessar as informações.
