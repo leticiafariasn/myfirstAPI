@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
         const data = new Date(textoData);
 
-        return data.toDateString('pt-BR') + ' ' + data.toLocaleTimeString('pt-BR');
-    }
+        return data.toDateString('pt-BR') + ' ' + data.toTimeString('pt-BR')    }
 
     function formatarPreco(preco) {
         return 'R$ ' + Number(preco).toFixed(2).replace('.', ',');
