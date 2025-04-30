@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const URL_DO_SUPABASE = 'https://rmlwilkvvemnfibrvqpi.supabase.co';
-    const CHAVE_ANONIMA = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJtbHdpbGt2dmVtbmZpYnJ2cXBpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU5NDU0NzcsImV4cCI6MjA2MTUyMTQ3N30.d9AP6lQjcrGaWBFWCZ7lCEAZW-rZwIR_FhlE8rr4GTY';
+    const URL_DO_SUPABASE = 'https://zqnwarooewrabsxkemtt.supabase.co';
+    const CHAVE_ANONIMA = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpxbndhcm9vZXdyYWJzeGtlbXR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYwMjkxNDcsImV4cCI6MjA2MTYwNTE0N30.62dffZaQtdL0ssJFnOMo1WXQLgtdETwiDeaePcQW1bY';
 
     const supabase = window.supabase.createClient(URL_DO_SUPABASE, CHAVE_ANONIMA)
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const { data, error } = await supabase
                 // await só funciona quando a função for assincrona (em 90% dos casos)
                 // função assincrona diz: "rode em paralelo"
-                .from(produtos); //produtos é o nome da tabela
+                .from('produtos'); //produtos é o nome da tabela
             .select('*'); // seleciona tudo da tabela
             .order('id');
 
