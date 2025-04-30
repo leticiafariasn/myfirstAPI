@@ -1,7 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const URL_DO_SUPABASE = 'https://zqnwarooewrabsxkemtt.supabase.co';
-    const CHAVE_ANONIMA = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpxbndhcm9vZXdyYWJzeGtlbXR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYwMjkxNDcsImV4cCI6MjA2MTYwNTE0N30.62dffZaQtdL0ssJFnOMo1WXQLgtdETwiDeaePcQW1bY';
 
+document.addEventListener('DOMContentLoaded', function(){
+  
+    const URL_DO_SUPABASE = 'https://zqnwarooewrabsxkemtt.supabase.co';
+    const CHAVE_ANONIMA =  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inpxbndhcm9vZXdyYWJzeGtlbXR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYwMjkxNDcsImV4cCI6MjA2MTYwNTE0N30.62dffZaQtdL0ssJFnOMo1WXQLgtdETwiDeaePcQW1bY';
+  
     const supabase = window.supabase.createClient(URL_DO_SUPABASE, CHAVE_ANONIMA)
 
     // -----------------------------
